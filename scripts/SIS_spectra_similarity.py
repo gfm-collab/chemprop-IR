@@ -95,7 +95,7 @@ def main():
         print(f'{e} - {mol}')
     with open('similarity.txt','w') as wf:
         for e,sim in enumerate(sims):
-            wf.write(f'{smiles[e]}\t{SIS similarity}\n')
+            wf.write(f'{smiles[e]}\t{sim}\n')
 
 if __name__ == '__main__':
     main()
